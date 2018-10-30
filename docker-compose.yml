@@ -34,10 +34,11 @@ services:
     container_name: mysql
     restart: always
     environment:
-     - MYSQL_ROOT_PASSWORD=123456A
-     - MYSQL_DATABASE=laravel_graphql
-     - MYSQL_USER=laravel
-     - MYSQL_PASSWORD=123456A
+      - MYSQL_ROOT_PASSWORD=A123456A
+      - MYSQL_DATABASE=webmaster
+      - MYSQL_USER=webmaster
+      - MYSQL_PASSWORD=A123456A
+      - MYSQL_ROOT_HOST=%
     volumes:
      - ./config/docker/volumes/mysql57:/var/lib/mysql
     networks:
