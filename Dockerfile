@@ -1,6 +1,6 @@
 FROM php:7.2-fpm-stretch
 
-MAINTAINER Leonardo Gomes <leonardo.delfica@gmail.com>
+MAINTAINER Leonardo Gomes da Silva <leonardo.delfica@gmail.com>
 
 ARG UNAME=docker
 ARG UID=1000
