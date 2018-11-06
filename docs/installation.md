@@ -1,6 +1,6 @@
-#Installation
+# Installation
 
-For this project, I'm using [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/). Please check official installation instructions.
+For this project, I'm using [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/). Please check official installation instructions for both.
 
 - Clone this repository (using https or SSH)
     ````
