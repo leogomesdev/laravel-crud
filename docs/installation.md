@@ -24,7 +24,12 @@ For this project, I'm using [Docker](https://www.docker.com/) and [Docker Compos
 
 - Start Docker:
     ````
-    docker-compose up
+    docker-compose up -d
+    ````
+    
+- Fix permissions to config/docker/volumes
+    ````
+    sudo chmod 777 -Rv config/docker/volumes
     ````
     
 - Access the PHP container and install composer dependencies
@@ -34,10 +39,15 @@ For this project, I'm using [Docker](https://www.docker.com/) and [Docker Compos
     ````
     composer install
     ````
+
+- Set your application key to a random string (inside the PHP container)
+    ````
+    php artisan key:generate
+    ````
     
 - Access the web service at [http:10.11.0.11](http:10.11.0.11)
 
-- To Database management:
+- Database Management:
     - Access [Adminer](https://www.adminer.org/) at [http:10.11.0.15:8080](http:10.11.0.15:8080) and use the credentials bellow:
         - **Server (name):** mysql
         - **Username:** webmaster
